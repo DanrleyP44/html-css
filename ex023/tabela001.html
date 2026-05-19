@@ -11,12 +11,15 @@
 
       table {
         border: 2px solid black;
-        width: 400px;
         border-collapse: collapse;
+        height: 400px;
+        width: 400px;
       }
 
       td {
         border: 1px solid black;
+        text-align: center;
+        vertical-align: top;
       }
 
       .linha {
@@ -24,38 +27,41 @@
       }
 
       .linha2 {
-        background-color: rgb(249, 249, 146);
+        background-color: rgb(249, 249, 167);
       }
 
       #danger {
         background-color: red;
       }
+
+      .esquerda {
+        text-align: left;
+      }
     </style>
   </head>
   <body>
     <h1>Minha primeira tabela</h1>
-
     <table>
       <tr class="linha">
-        <td>A1</td>
+        <td class="esquerda">A1</td>
         <td>B1</td>
         <td>C1</td>
       </tr>
 
       <tr class="linha2">
-        <td>A2</td>
+        <td class="esquerda">A2</td>
         <td>B2</td>
         <td>C2</td>
       </tr>
 
       <tr class="linha">
-        <td>A3</td>
+        <td class="esquerda">A3</td>
         <td>B3</td>
         <td>C3</td>
       </tr>
 
       <tr class="linha2">
-        <td>A4</td>
+        <td class="esquerda">A4</td>
         <td id="danger">B4</td>
         <td>C4</td>
       </tr>
