@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulários</title>
+  </head>
+  <body>
+    <h1>Teste com Formulários</h1>
+
+    <form action="cadsro.php" method="post" autocomplete="on">
+      <p>
+        <label for="icor">Cor: </label>
+        <input type="color" name="cor" id="icor" value="#1adb1d" />
+      </p>
+
+      <p>
+        <label for="inivel">Nível: </label>
+        <input type="range" name="nivel" id="inivel" min="1" max="5" />
+      </p>
+
+      <p>
+        <label for="ipic">Foto de perfil: </label>
+        <input type="file" name="pic" id="ipic" />
+      </p>
+
+      <p>
+        <input type="submit" value="Enviar" />
+        <input type="reset" value="Limpar" />
+      </p>
+    </form>
+  </body>
+</html>
