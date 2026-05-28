@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+/*Todas as demais mídias*/
+
+/*
+celular: até 768
+tablet: 769 - 992
+small desktops: 993 - 1200
+large desktop: 1200 and up
+*/
+
+@media print {
+  main {
+    border: 2px solid black;
+    width: 90vw;
+  }
+
+  main::after {
+    content: 'Conteúdo impresso do site www.cursoemvideo.com';
+  }
+
+  h1 {
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+  }
+
+  #phone {
+    display: none;
+  }
+
+  #print {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  body {
+    background-image: url('../imagens/back-tablet.jpg');
+  }
+
+  #phone {
+    display: none;
+  }
+
+  #tablet {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 993px) {
+  body {
+    background-image: url('../imagens/back-pc.jpg');
+  }
+
+  #tablet {
+    display: none;
+  }
+
+  #pc {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    background-image: url('../imagens/back-tv.jpg');
+  }
+
+  #pc {
+    display: none;
+  }
+
+  #tv {
+    display: block;
+  }
+}
