@@ -8,6 +8,7 @@
 
 body {
   background-color: lightgray;
+  font-size: 1em;
   height: 100vh;
   width: 100vw;
 }
@@ -16,14 +17,37 @@ header {
   background-color: gray;
   padding: 10px;
   color: white;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
 header > h1 {
   border: 1px dotted black;
+  flex: 0 0 200px;
 }
 
 nav {
   border: 1px dotted black;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+}
+
+header > nav > a {
+  background-color: black;
+  color: white;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+header > nav > a:hover {
+  background-color: white;
+  color: black;
+  transition: background-color 0.5s;
 }
 
 main {
